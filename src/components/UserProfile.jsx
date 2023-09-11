@@ -1,7 +1,6 @@
 import ProfileDetails from './ProfileDetails';
 import ProfileFoto from './ProfileFoto';
 
-
 const UserProfile = () => {
     //na potrzeby poukladania calosci, wstawiam dane ziomka z FakeProfile
     const fakeProfile = {
@@ -9,10 +8,12 @@ const UserProfile = () => {
         nickName: "Zigi",
         email: 'zigi@wp.pl'
     };
+
     const profileData = {
         name: `${fakeProfile.name}`,
         nickName: `${fakeProfile.nickName}`,
         email: `${fakeProfile.email}`
+        ,
     };
     return (
         <div className="user-profile">

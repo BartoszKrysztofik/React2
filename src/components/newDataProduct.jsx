@@ -21,13 +21,16 @@ const data = [
 ]
 
 const NewDataProduct = () => {
-    const [count, setCount]=useState(0)
+    const [count, setCount] = useState(0)
+    const handleClick = ( nameProduct, price) => {
+    alert (`${nameProduct} w cenie ${price} COP, kupuj nie czekaj, taniej ie bedzie`)
+    }
     return (
         <div>
-            <h3>Dostępne produkty</h3>
-            <div className="ukladProduktu">
+            <h3 className="availableProducts">Dostępne produkty</h3>
+            <div className="ukladProduktu" >
                 {data.map((product, index) => (
-                    <p key={index} className="line">
+                    <p key={index} className="line" onClick={()=>handleClick( product.nameProduct,product.price)}>
                         <p>{index + 1}</p> 
                         <p>{product.nameProduct}</p> 
                         <p>Cena: {product.price} COP</p> 

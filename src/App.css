@@ -1,13 +1,12 @@
 #root {
-  max-width: 100vh;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .App{
   display: flex;
   flex-direction: column;
-  /* max-width: 100%;
-  max-height: 100%; */
+
 }
 .container{
   background-color: aqua;
@@ -45,10 +44,11 @@
   align-items: center;
   gap: 5px;
 }
+.todo{
+  text-decoration:line-through;
+}
 .right {
-display: flex;
-border: 1px solid yellow;
-border-radius: 7px;
+
 }
 .left{
   display: flex;
@@ -58,18 +58,19 @@ border-radius: 7px;
   font-size: x-large;
 }
 .section {
-  display: flex;
-  flex-direction:row;
-  margin: 3% 3%;
-  width: 100%
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin:3% 3%;
+  width: 100%;
+}
+.lineSeparating{
+  color:dimgrey;
+  width: 80%;
+  margin: 10% 10%;
 }
 .lineProdukt{
   display: flex;}
 .newDataProduct{
-}
-.availableProducts{
-  display: flex;
-  align-content: center;
 }
 .product{
 width: 100%;
@@ -93,6 +94,13 @@ width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid yellow;
+  border-radius: 7px;
+}
+.sectorProduct{
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto ;
 }
 
 

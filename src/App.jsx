@@ -3,7 +3,8 @@ import './App.css'
 import UserProfile from './components/UserProfile'
 import FakeFoto from './assets/g-3.svg'
 import Product from './components/Product'
-import GreetingCard from './components/GreetingCard'
+// import GreetingCard from './components/GreetingCard'
+import Todo from './components/Todo'
 
 function App() {
 
@@ -22,9 +23,21 @@ function App() {
           </div>
         </div>
         <div className='section'>
+          <div className='left'>
           <div className='product'>
             <Product />
           </div>
+          </div>
+          <div className='right'>
+          <div className='todo'> Do zrobienia:
+            <Todo task="Kupic opony" />
+            <Todo task="Kupic choinke" />
+            <Todo task="Wystawic felgi na sprzedaz"/>
+          </div>
+            <div className='lineSeparating'>
+              <hr></hr>
+          </div>  
+          </div>  
         </div>
       </div>
     </>
