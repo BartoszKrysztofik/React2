@@ -1,4 +1,3 @@
-import Outcome from "./Outcome"
 import LikeButton from "./LikeButton"
 import { useState } from "react"
 
@@ -22,22 +21,23 @@ const data = [
 
 const NewDataProduct = () => {
     const [count, setCount] = useState(0)
-    const handleClick = ( nameProduct, price) => {
-    alert (`${nameProduct} w cenie ${price} COP, kupuj nie czekaj, taniej ie bedzie`)
+    const handleClick = ( nameProduct, price, description) => {
+        alert(`${nameProduct} w cenie ${price} COP, ${description}!!! Kupuj nie czekaj, taniej nie bedzie`)
     }
     return (
         <div>
             <h3 className="availableProducts">Dostępne produkty</h3>
             <div className="ukladProduktu" >
                 {data.map((product, index) => (
-                    <p key={index} className="line" onClick={()=>handleClick( product.nameProduct,product.price)}>
-                        <p>{index + 1}</p> 
-                        <p>{product.nameProduct}</p> 
-                        <p>Cena: {product.price} COP</p> 
-                        <p>Opis: {product.description}</p>
+                    <p key={index} className="line" >
+                        <div className="productLeft" onClick={() => handleClick(product.nameProduct, product.price, product.description )}>
+                            <div>Oferta {index + 1}:</div> 
+                            <div>{product.nameProduct}</div> 
+                        {/* <p>Cena: {product.price} COP</p>  */}
+                        {/* <p>Opis: {product.description}</p> */}
+                        </div>
                         <div className="like">
-                        <p ><LikeButton setCount={setCount} /></p>
-                        <p><Outcome count={count} /></p>
+                        <p ><LikeButton setCount={setCount} count={count} /></p>
                         </div>    
                     </p>
                 ))}

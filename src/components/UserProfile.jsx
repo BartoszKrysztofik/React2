@@ -4,7 +4,7 @@ import ProfileFoto from './ProfileFoto';
 const UserProfile = () => {
     //na potrzeby poukladania calosci, wstawiam dane ziomka z FakeProfile
     const fakeProfile = {
-        name: "Zygryd",
+        name: "Zygfryd",
         nickName: "Zigi",
         email: 'zigi@wp.pl'
     };

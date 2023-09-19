@@ -1,9 +1,12 @@
-const LikeButton = ({ setCount }) => {
+import { useState } from "react"
+
+
+const LikeButton = ({ count, setCount }) => {
     return (
         <button onClick={() => {
             setCount((prev)=>prev+1)
         }}
-        >Like
+        >Obserwuje: {count}
         </button>
     )
 }

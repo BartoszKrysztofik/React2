@@ -1,10 +1,10 @@
 import NewDataProduct from "./newDataProduct";
-// import LikeButton from "./LikeButton";
-// import Outcome from "./Outcome";
-// import { useState } from "react"
+import LikeButton from "./LikeButton";
+import { useState } from "react"
 
 const Product = () => {
-
+    const [count, setCount]=useState(0)
+    
     return (
         <div className="newDataProduct">
             <NewDataProduct />

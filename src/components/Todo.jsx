@@ -9,7 +9,9 @@ const Todo = ({ task }) => {
     return (
         <div className="todo">
             <input type="checkbox" checked={state} onChange={stateComplete} />
-            <span>{task}</span>
+            <span style={{ textDecoration: state ? 'line-through' : 'none' }}>
+                {task}
+            </span>
         </div>
     );
 }
