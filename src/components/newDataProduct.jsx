@@ -39,7 +39,7 @@ const NewDataProduct = () => {
                         <div className="like">
                         <p ><LikeButton setCount={setCount} count={count} /></p>
                         </div>    
-                    </p>
+                        </p>
                 ))}
             </div>
         </div>

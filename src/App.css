@@ -1,9 +1,10 @@
 #root {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .App{
+  width: 100%;
   display: flex;
   flex-direction: column;
 
@@ -14,7 +15,7 @@
   flex-direction: column;
   justify-content: space-around;
   height: 100%;
-  width: 100vh;
+  width: 100%;
   margin: 3px 3px;
 }
 .header{
@@ -27,6 +28,29 @@
   grid-template-columns: 75% 25%;
   margin: 8px 8px;
 }
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:5px;
+}
+.tabsDynamic{
+  display:flex ;
+  justify-content : center;
+}
+.DynamicTabs{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: aqua;
+}
+.tab{
+    background-color: red;
+}
+/* .content{
+    background-color: red;
+} */
 .ukladProduktu{
   display: flex;
   flex-direction: column;
@@ -62,7 +86,9 @@ max-height: 80%;
   align-items: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: x-large;
+margin: 5px 5px;
 }
+
 
 .lineSeparating{
   color:dimgrey;
@@ -113,7 +139,22 @@ width: 100%;
   display: flex;
   justify-content: end;
 }
-
+.comment{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid grey;
+}
+.komentarze{
+  margin-left: 5px;
+}
+.p{
+  color: grey;
+  margin-left: 10px;
+}
+.h4 {
+  margin-left: 5px;
+}
 
 
 
